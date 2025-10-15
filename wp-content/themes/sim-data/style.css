@@ -1,0 +1,13 @@
+/*
+Theme Name: Sim Data
+Theme URI: https://example.com/
+Description: Child theme of Hello Elementor
+Author: Admin
+Template: hello-elementor
+Version: 1.0
+Text Domain: sim-data
+*/
+
+body {
+    background-color: #fafafa;
+}
