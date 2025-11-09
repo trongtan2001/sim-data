@@ -89,6 +89,10 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+@ini_set('upload_max_size', '256M');
+@ini_set('post_max_size', '256M');
+@ini_set('max_execution_time', '300');
+
 define('WP_HOME', 'http://localhost/sim');
 define('WP_SITEURL', 'http://localhost/sim');
 

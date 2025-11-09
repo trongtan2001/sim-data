@@ -47,7 +47,7 @@ class Export_Runner extends Export_Runner_Base {
 
 		return [
 			'files' => [
-				'path' => Import_Export::FILE_NAME,
+				'path' => Import_Export_Customization::FILE_NAME,
 				'data' => $icon_sets_data,
 			],
 			'manifest' => [
