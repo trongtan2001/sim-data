@@ -80,7 +80,7 @@ a.text-underline:hover {
   background: #907f6f1f;
   border-radius: 16px;
 }
-.e-n-accordion .e-n-accordion-item:first-child .e-n-accordion-item-title{
+.e-n-accordion .e-n-accordion-item:first-child .e-n-accordion-item-title {
   border-width: 0px !important;
 }
 .woocommerce-MyAccount-content-wrapper {
@@ -675,7 +675,9 @@ a.glink img {
 }
 /* End Language */
 /* Account */
-
+#customer_login h2 {
+  padding-left: 30px;
+}
 .wc-account-menu {
   position: relative;
   display: inline-block;
@@ -927,6 +929,9 @@ a.glink img {
   gap: 5px;
   margin-bottom: 10px;
 }
+.variation-unit-price {
+  font-size: 12px;
+}
 
 @media (max-width: 849px) {
 }
@@ -992,7 +997,39 @@ a.glink img {
     font-size: 12px;
   }
 
-  .icon-menu-mobile .elementor-icon{
+  .icon-menu-mobile .elementor-icon {
     display: block !important;
+  }
+
+  .popup-language .gtranslate_wrapper > a {
+    justify-content: flex-start !important;
+    color: #0c0c0d;
+    padding: 10px;
+  }
+
+  .popup-language .gtranslate_wrapper > a::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 24px;
+    z-index: 1;
+    background: #0c0c0d0f;
+    right: 12px;
+  }
+
+  .popup-language .gtranslate_wrapper > a.gt-current-lang::after {
+    background: #ff7a00;
+  }
+
+  .popup-language .gtranslate_wrapper > a.gt-current-lang::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    right: 18px;
+    z-index: 2;
   }
 }

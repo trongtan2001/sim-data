@@ -59,7 +59,15 @@ function wc_login_button_shortcode() {
 }
 add_shortcode( 'wc_login_button', 'wc_login_button_shortcode' );
 
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+
 require_once get_stylesheet_directory() . '/custom-post-support.php';
 require_once get_stylesheet_directory() . '/custom-devices.php';
-require_once get_stylesheet_directory() . '/item-product.php';
+// require_once get_stylesheet_directory() . '/item-product.php';
+require_once get_stylesheet_directory() . '/item-product-two.php';
 require_once get_stylesheet_directory() . '/custom-field.php';
